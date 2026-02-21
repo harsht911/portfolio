@@ -33,6 +33,11 @@ This portfolio features a custom-built secure Admin Panel to manage all your dyn
 - **Access URL**: `your-website.com/#admin`
 - **Full Documentation**: Refer to **[CMS_GUIDE.md](./CMS_GUIDE.md)** for login details and management instructions.
 
+# Add ENV file in utils
+- `export const isDev = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';`
+
+
+
 ## 📦 Installation
 
 ```bash
