@@ -1,0 +1,39 @@
+{
+  "name": "harsh-thakkar-portfolio",
+  "version": "1.0.2",
+  "description": "Mobile Application Developer Portfolio - React Native Web",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --mode development --config webpack.config.js --open",
+    "build": "webpack --mode production --config webpack.config.js",
+    "bridge": "node scripts/deploy-bridge.js",
+    "predeploy": "npm run build",
+    "deploy": "npx firebase deploy"
+  },
+  "keywords": [
+    "react-native-web",
+    "portfolio",
+    "android-developer"
+  ],
+  "author": "Harsh Thakkar",
+  "license": "MIT",
+  "dependencies": {
+    "firebase": "^12.9.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-native-web": "^0.19.9",
+    "react-router-dom": "^6.20.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.5",
+    "@babel/preset-env": "^7.23.5",
+    "@babel/preset-react": "^7.23.3",
+    "babel-loader": "^9.1.3",
+    "babel-plugin-react-native-web": "^0.19.9",
+    "copy-webpack-plugin": "^13.0.1",
+    "html-webpack-plugin": "^5.5.4",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
